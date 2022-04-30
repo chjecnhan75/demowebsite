@@ -660,7 +660,301 @@
         </div>
     </section>
     <!-- Blog Section End -->
+    <div class="call-btn">
+        <div class="circle-fill"></div>
+        <span class="phone-number">0903427456</span>
+        <div class="img-circle">
+            <a id="call-btn" class="call-link" href="tel:0903427456" title="0903427456">
+                <img src="https://vuhang.net/wp-content/themes/dev_thegioiwebviet/images/phone-ring.png" alt="0903427456">
+            </a>
+        </div>
+    </div>
+    <style>
+        @-webkit-keyframes coccoc-alo-circle-anim {
+            0% {
+                opacity: .1;
+                -webkit-transform: rotate(0) scale(.5) skew(1deg);
+                transform: rotate(0) scale(.5) skew(1deg)
+            }
+            30% {
+                opacity: .5;
+                -webkit-transform: rotate(0) scale(.7) skew(1deg);
+                transform: rotate(0) scale(.7) skew(1deg)
+            }
+            100% {
+                opacity: .6;
+                -webkit-transform: rotate(0) scale(1) skew(1deg);
+                transform: rotate(0) scale(1) skew(1deg)
+            }
+        }
 
+        @keyframes coccoc-alo-circle-anim {
+            0% {
+                opacity: .1;
+                -webkit-transform: rotate(0) scale(.5) skew(1deg);
+                transform: rotate(0) scale(.5) skew(1deg)
+            }
+            30% {
+                opacity: .5;
+                -webkit-transform: rotate(0) scale(.7) skew(1deg);
+                transform: rotate(0) scale(.7) skew(1deg)
+            }
+            100% {
+                opacity: .6;
+                -webkit-transform: rotate(0) scale(1) skew(1deg);
+                transform: rotate(0) scale(1) skew(1deg)
+            }
+        }
+
+        @-webkit-keyframes coccoc-alo-circle-img-anim {
+            0% {
+                -webkit-transform: rotate(0) scale(1) skew(1deg);
+                transform: rotate(0) scale(1) skew(1deg)
+            }
+            10% {
+                -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+                transform: rotate(-25deg) scale(1) skew(1deg)
+            }
+            20% {
+                -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+                transform: rotate(25deg) scale(1) skew(1deg)
+            }
+            30% {
+                -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+                transform: rotate(-25deg) scale(1) skew(1deg)
+            }
+            40% {
+                -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+                transform: rotate(25deg) scale(1) skew(1deg)
+            }
+            50% {
+                -webkit-transform: rotate(0) scale(1) skew(1deg);
+                transform: rotate(0) scale(1) skew(1deg)
+            }
+            100% {
+                -webkit-transform: rotate(0) scale(1) skew(1deg);
+                transform: rotate(0) scale(1) skew(1deg)
+            }
+        }
+
+        @keyframes coccoc-alo-circle-img-anim {
+            0% {
+                -webkit-transform: rotate(0) scale(1) skew(1deg);
+                transform: rotate(0) scale(1) skew(1deg)
+            }
+            10% {
+                -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+                transform: rotate(-25deg) scale(1) skew(1deg)
+            }
+            20% {
+                -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+                transform: rotate(25deg) scale(1) skew(1deg)
+            }
+            30% {
+                -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+                transform: rotate(-25deg) scale(1) skew(1deg)
+            }
+            40% {
+                -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+                transform: rotate(25deg) scale(1) skew(1deg)
+            }
+            50% {
+                -webkit-transform: rotate(0) scale(1) skew(1deg);
+                transform: rotate(0) scale(1) skew(1deg)
+            }
+            100% {
+                -webkit-transform: rotate(0) scale(1) skew(1deg);
+                transform: rotate(0) scale(1) skew(1deg)
+            }
+        }
+
+        @-webkit-keyframes coccoc-alo-circle-fill-anim {
+            0% {
+                opacity: .2;
+                -webkit-transform: rotate(0) scale(.7) skew(1deg);
+                transform: rotate(0) scale(.7) skew(1deg)
+            }
+            50% {
+                opacity: .2;
+                -webkit-transform: rotate(0) scale(1) skew(1deg);
+                transform: rotate(0) scale(1) skew(1deg)
+            }
+            100% {
+                opacity: .2;
+                -webkit-transform: rotate(0) scale(.7) skew(1deg);
+                transform: rotate(0) scale(.7) skew(1deg)
+            }
+        }
+
+        @keyframes coccoc-alo-circle-fill-anim {
+            0% {
+                opacity: .2;
+                -webkit-transform: rotate(0) scale(.7) skew(1deg);
+                transform: rotate(0) scale(.7) skew(1deg)
+            }
+            50% {
+                opacity: .2;
+                -webkit-transform: rotate(0) scale(1) skew(1deg);
+                transform: rotate(0) scale(1) skew(1deg)
+            }
+            100% {
+                opacity: .2;
+                -webkit-transform: rotate(0) scale(.7) skew(1deg);
+                transform: rotate(0) scale(.7) skew(1deg)
+            }
+        }
+
+        .call-btn {
+            background-color: transparent;
+            cursor: pointer;
+            height: 120px;
+            position: fixed;
+            -webkit-transition: visibility .5s ease 0s;
+            -o-transition: visibility .5s ease 0s;
+            transition: visibility .5s ease 0s;
+            width: 200px;
+            z-index: 9998!important;
+            left: -15px;
+            bottom: -51px
+        }
+
+        .call-btn .circle {
+            border-color: red;
+            opacity: .5;
+            -webkit-animation: 1.2s ease-in-out 0s normal none infinite running coccoc-alo-circle-anim;
+            animation: 1.2s ease-in-out 0s normal none infinite running coccoc-alo-circle-anim;
+            background-color: transparent;
+            border: 2px solid red;
+            -webkit-border-radius: 100%;
+            border-radius: 100%;
+            height: 160px;
+            left: 20px;
+            opacity: .1;
+            position: absolute;
+            top: 20px;
+            -webkit-transform-origin: 50% 50% 0;
+            -ms-transform-origin: 50% 50% 0;
+            transform-origin: 50% 50% 0;
+            -webkit-transition: all .5s ease 0s;
+            -o-transition: all .5s ease 0s;
+            transition: all .5s ease 0s;
+            width: 160px
+        }
+
+        .call-btn .circle-fill {
+            background-color: red;
+            opacity: .75!important;
+            -webkit-animation: 2.3s ease-in-out 0s normal none infinite running coccoc-alo-circle-fill-anim;
+            animation: 2.3s ease-in-out 0s normal none infinite running coccoc-alo-circle-fill-anim;
+            background-color: red;
+            border: 2px solid transparent;
+            -webkit-border-radius: 100%;
+            border-radius: 100%;
+            height: 80px;
+            left: 54px;
+            opacity: .1;
+            position: absolute;
+            top: -5px;
+            -webkit-transform-origin: 50% 50% 0;
+            -ms-transform-origin: 50% 50% 0;
+            transform-origin: 50% 50% 0;
+            -webkit-transition: all .5s ease 0s;
+            -o-transition: all .5s ease 0s;
+            transition: all .5s ease 0s;
+            width: 80px
+        }
+
+        .call-btn .img-circle {
+            background-color: red;
+            -webkit-animation: 1s ease-in-out 0s normal none infinite running coccoc-alo-circle-img-anim;
+            animation: 1s ease-in-out 0s normal none infinite running coccoc-alo-circle-img-anim;
+            border: 2px solid transparent;
+            -webkit-border-radius: 100%;
+            border-radius: 100%;
+            height: 50px;
+            left: 70px;
+            position: absolute;
+            z-index: 10000;
+            top: 10px;
+            -webkit-transform-origin: 50% 50% 0;
+            -ms-transform-origin: 50% 50% 0;
+            transform-origin: 50% 50% 0;
+            width: 50px
+        }
+
+        .call-btn .phone-number {
+            position: absolute;
+            display: block;
+            left: 80px;
+            top: 50%;
+            width: 150px;
+            height: 30px;
+            background-color: red;
+            z-index: 9999;
+            padding: 8px 14px;
+            color: #fff;
+            -webkit-border-radius: 50px;
+            border-radius: 50px;
+            padding-left: 40px;
+            margin-top: -40px;
+            font-size: 15px;
+            line-height: 1.1;
+            font-family: Roboto, Helvetica, Arial, sans-serif
+        }
+
+        .call-btn .call-link img {
+            padding: 5px 0 0 5px;
+            max-width: 100%;
+            height: 33px;
+            box-sizing: border-box;
+            position: relative;
+            left: 2px;
+            top: 4px;
+        }
+
+        .call-btn .call-link:hover {
+            opacity: .8
+        }
+        @media only screen and (max-width: 767px) {
+            .hl-title-tieu-de-san-pham-trang-chu-widget {
+                font-size: 20px;
+            }
+            .hl-title-category-san-pham .hl-link-category-san-pham {
+                font-size: 14px;
+            }
+            .call-btn {
+                height: 120px;
+                width: 120px;
+                bottom: 10px
+            }
+            .call-btn .circle {
+                height: 100px;
+                width: 100px;
+                left: 20px;
+                top: 20px
+            }
+            .call-btn .circle-fill {
+                height: 80px;
+                left: 30px;
+                top: 30px;
+                width: 80px
+            }
+            .call-btn .img-circle {
+                height: 40px;
+                left: 50px;
+                top: 50px;
+                width: 40px
+            }
+            .call-btn .call-link img {
+                padding: 0;
+                height: 29px;
+            }
+            .call-btn .phone-number {
+                display: none
+            }
+        }
+    </style>
+    
     <!-- Footer Section Begin -->
     <footer class="footer spad">
         <div class="container">
